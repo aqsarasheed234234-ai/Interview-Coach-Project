@@ -16,13 +16,13 @@ if not groq_api_key:
     st.error("⚠️ Please add your Groq API Key as 'GROQ_API_KEY' in the .env file.")
     st.stop()
 
-# 3. Initialize Groq's Llama model
+# 3. Initialize Groq's Llama model (CORRECTED MODEL NAME)
 @st.cache_resource
 def load_llm():
     return ChatGroq(
         temperature=0.7,
         groq_api_key=groq_api_key,
-        model_name="llama3-70b-8192"  # Free and fastest model
+        model_name="llama-3.3-70b-versatile"  # ✅ Fully supported model
     )
 
 llm = load_llm()
