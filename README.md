@@ -77,4 +77,6 @@ The **AI Interview Coach** is a web-based application designed to help job seeke
 
 ## 🛠️ Technical Requirements
 
+
 ### 📦 Required Python Packages
+
