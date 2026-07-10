@@ -74,9 +74,6 @@ The **AI Interview Coach** is a web-based application designed to help job seeke
 - **"Start Interview"** button triggers the entire workflow.
 
 ---
-
 ## 🛠️ Technical Requirements
 
-
 ### 📦 Required Python Packages
-
