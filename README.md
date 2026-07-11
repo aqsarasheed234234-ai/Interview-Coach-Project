@@ -77,3 +77,59 @@ The **AI Interview Coach** is a web-based application designed to help job seeke
 ## 🛠️ Technical Requirements
 
 ### 📦 Required Python Packages
+
+streamlit==1.38.0
+langchain==0.3.0
+langchain-groq==0.1.0
+langchain-core==0.3.0
+python-dotenv==1.0.0
+PyPDF2==3.0.0
+groq==0.9.0
+
+
+### ⚙️ System Requirements
+- **Python Version:** 3.10 or higher
+- **Operating System:** Windows / macOS / Linux
+- **RAM:** Minimum 4 GB (8 GB recommended)
+- **Storage:** 500 MB free space
+- **Internet:** Required for Groq API calls
+
+### 🔑 API Keys Required
+- **Groq API Key:** Sign up at [console.groq.com](https://console.groq.com) to get your API key.
+- Store it in a `.env` file:
+```env
+GROQ_API_KEY=your_groq_api_key_here
+
+### 🏗️ Project Architecture
+
+┌─────────────────────────────────────────────────────────────┐
+│                    USER INTERFACE (UI)                      │
+│                     (Streamlit App)                         │
+│  ┌─────────────┐  ┌─────────────┐  ┌──────────────────┐   │
+│  │   Sidebar   │  │  Main Area  │  │  Results Panel   │   │
+│  │ (Profile)   │  │(Questions)  │  │  (Feedback &     │   │
+│  └─────────────┘  └─────────────┘  │   Score)         │   │
+│                                     └──────────────────┘   │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    APPLICATION LAYER                        │
+│                     (Python Backend)                        │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │  1. Load API Key from .env                         │   │
+│  │  2. Initialize Groq LLM (Llama 3.3 70B)           │   │
+│  │  3. Build LangChain Pipeline                       │   │
+│  │  4. Generate Questions (Chain.invoke)             │   │
+│  │  5. Generate Feedback (Chain.invoke)              │   │
+│  └─────────────────────────────────────────────────────┘   │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    EXTERNAL SERVICES                        │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │  Groq API (Llama 3.3 70B) - LLM Engine            │   │
+│  └─────────────────────────────────────────────────────┘   │
+└─────────────────────────────────────────────────────────────┘
+
