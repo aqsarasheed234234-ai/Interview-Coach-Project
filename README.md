@@ -16,6 +16,7 @@
 
 ---
 
+
 ## 📌 Project Overview
 
 **Project Name:** AI Interview Coach  
@@ -37,6 +38,7 @@ The **AI Interview Coach** is a web-based application designed to help job seeke
 | **Git/GitHub** | Version control and code hosting |
 
 ---
+
 
 ## ✨ Features & Functionality
 
@@ -67,7 +69,7 @@ The **AI Interview Coach** is a web-based application designed to help job seeke
 - **Summary:**
   - All questions with user answers
   - AI-generated feedback for each answer
-  - Balloon animation for celebration 🎈
+  - Balloon animation for celebration 
 
 ### 5  Sidebar Interface
 - User profile inputs are placed in the sidebar for a clean layout.
