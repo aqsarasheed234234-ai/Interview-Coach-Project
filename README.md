@@ -11,7 +11,6 @@
 7. [Troubleshooting & Errors Resolved](#troubleshooting--errors-resolved)
 8. [Future Enhancements](#future-enhancements)
 9. [Conclusion](#conclusion)
-
 ---
 
 ## 📌 Project Overview
@@ -24,6 +23,7 @@
 The **AI Interview Coach** is a web-based application designed to help job seekers practice technical interviews. The system uses a Large Language Model (LLM) to generate customized interview questions based on the user's role and skills, evaluate their answers, and provide constructive feedback with a score.
 
 ### 🔧 Technologies Used
+
 | Technology | Purpose |
 | :--- | :--- |
 | **Python** | Core programming language |
@@ -35,7 +35,6 @@ The **AI Interview Coach** is a web-based application designed to help job seeke
 | **Git/GitHub** | Version control and code hosting |
 
 ---
-
 
 ## ✨ Features & Functionality
 
