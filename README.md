@@ -39,6 +39,7 @@ The **AI Interview Coach** is a web-based application designed to help job seeke
 ## ✨ Features & Functionality
 
 ### 1  User Profile Management
+
 - **Input Fields:**
   - User Name (text input)
   - Job Title / Role (e.g., Data Scientist, MERN Developer)
@@ -46,6 +47,7 @@ The **AI Interview Coach** is a web-based application designed to help job seeke
   - **OR** Upload CV (PDF format) – automatically extracts skills
 
 ### 2 AI-Powered Question Generation
+
 - The system calls the **Groq API (Llama 3.3 70B)** to generate **exactly 5 unique** technical questions.
 - Questions are tailored to the user's:
   - Job Role
